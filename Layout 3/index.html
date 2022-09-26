@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 3</title>
+
+    <style>
+        main>* {
+            background: silver;
+            font-family: sans-serif;
+        }
+
+        main {
+            width: 960px;
+
+            margin: 20px auto 0 auto;
+            display: grid;
+            /* 12 columns */
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 60px 350px  60px 160px 160px 30px;
+            grid-gap: 15px;
+        }
+
+        header {
+            grid-row: 1 /2;
+            grid-column: 1/span 3;
+
+
+        }
+
+        nav {
+            grid-row: 1/1;
+            grid-column: 7/span 6;
+            height: 40px;
+            align-self: center;
+            padding-right: 20px;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        nav ul li {
+            display: inline;
+
+
+        }
+
+
+        .image {
+
+            grid-row: 2/3;
+            grid-column: 1/ span 12;
+        }
+
+        .text,h1,h3 {
+            grid-row: 2/3;
+            grid-column: 1/ span 12;
+            text-align: left;
+            padding: 20px 30px 0 30px;
+    
+
+        }
+
+  
+
+        .sec1 {
+            grid-row: 3/3;
+            grid-column: 1/ span 3;
+        }
+
+        .sec2 {
+            grid-row: 3/3;
+            grid-column: 7/ span 3;
+        }
+
+
+
+
+        .sec4 {
+
+            grid-row: 4/4;
+            grid-column: 1/ span 6;
+        }
+
+        .sec5 {
+            grid-row: 4/4;
+            grid-column: 7/ span 3;
+        }
+
+        .sec6 {
+            grid-row: 4/4;
+            grid-column: 10/ span 3;
+        }
+
+
+
+
+
+        .sec7 {
+            grid-row: 5/5;
+                grid-column: 1/ span 6;
+        }
+
+
+
+
+
+        .sec8 {
+            grid-row: 5/5;
+                grid-column: 7/ span 3;
+        }
+
+        .sec9 {
+            grid-row: 5/5;
+          grid-column: 10/ span 3;
+        }
+
+        footer {
+            grid-row: 6/6;
+            grid-column: 1/span 12;
+            text-align: center;
+
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <header>Company Logo</header>
+        <nav>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </nav>
+     <div class="text">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, placeat. Autem, velit culpa nemo obcaecati
+            voluptas commodi?
+        </h1>
+        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur esse, at voluptatum consectetur Lorem
+            ipsum dol Esse doloremque inventore aspernatur delectus nostrum labore facilis, quos officiis saepe.</h3>
+     </div>
+    
+        <section class="sec1">Title</section>
+        <section class="sec2">Title</section>
+
+        <section class="sec4">Blog Post 1</section>
+        <section class="sec5">Featured Product 1</section>
+        <section class="sec6">Featured Product 2</section>
+        <section class="sec7">Blog Post 2</section>
+        <section class="sec8">Featured Product 3</section>
+        <section class="sec9">Featured Product 4</section>
+
+        <footer>Copyright Notice</footer>
+    </main>
+
+</body>
+
+</html>
